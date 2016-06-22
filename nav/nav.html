@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>CSS多级菜单</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .nav {
+            height: 50px;
+            font-size: 14px;
+            background-color: #0081C2;
+        }
+        
+        .nav ul {
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        .nav ul li {
+            display: inline-block;
+            width: 15%;
+            height: 50px;
+            text-align: center;
+            line-height: 45px;
+            position: relative;
+        }
+        /*menu相对li定位 并默认隐藏*/
+        
+        .menu {
+            position: absolute;
+            left: 0;
+            /*top: 50px;*/
+            width: 100%;
+            background-color: #005580;
+            line-height: 33px;
+            /*display: none;*/
+            transition: all 500ms;
+            top: -200px;
+            opacity: 0;
+        }
+        
+        .menu p {
+            width: 100%;
+            height: 35px;
+        }
+        
+        .menu p a:hover {
+            color: #dfdfdf;
+        }
+        
+        .nav ul li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #ffffff;
+            text-align: center;
+        }
+        /*当li鼠标hover时显示*/
+        
+        .nav ul li:hover {
+            background-color: #00007D;
+        }
+        
+        .nav ul li:hover .menu {
+            /*display: block;*/
+            top:50px;
+            opacity: 1;
+        }
+        
+        .box {
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="#">菜单选项一</a>
+                <div class="menu">
+                    <p><a href="#">二级菜单1</a></p>
+                    <p><a href="#">二级菜单2</a></p>
+                    <p><a href="#">二级菜单3</a></p>
+                    <p><a href="#">二级菜单4</a></p>
+                </div>
+            </li>
+            <li>
+                <a href="#">菜单选项二</a>
+                <div class="menu">
+                    <p><a href="#">二级菜单1</a></p>
+                    <p><a href="#">二级菜单2</a></p>
+                    <p><a href="#">二级菜单3</a></p>
+                    <p><a href="#">二级菜单4</a></p>
+                </div>
+            </li>
+            <li><a href="#">菜单选项三</a></li>
+            <li><a href="#">菜单选项四</a></li>
+            <li><a href="#">菜单选项五</a></li>
+            <li><a href="#">菜单选项六</a></li>
+        </ul>
+    </div>
+    <div class="box"></div>
+</body>
+
+</html>
+<script>
+    console.log("sadas");
+
+</script>
