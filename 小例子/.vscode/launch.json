@@ -5,7 +5,7 @@
             "name": "Launch index.html with sourcemaps",
             "type": "chrome",
             "request": "launch",
-            "file": "${workspaceRoot}/index.html",
+            "file": "${workspaceRoot}/typerange.html",
             "sourceMaps": true,
             "webRoot": "${workspaceRoot}"
         },
@@ -21,7 +21,7 @@
             "name": "Attach with sourcemaps",
             "type": "chrome",
             "request": "attach",
-            "port": 8080,
+            "port": 9222,
             "sourceMaps": true,
             "webRoot": "${workspaceRoot}"
         }
