@@ -1,0 +1,5 @@
+body,div,ul,li,h1,h2,h3,h4,h5,h6,p,form,img{margin:0;padding:0;border:0;}
+.etc{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}    /*省略号*/
+.wrap{word-wrap:break-word;}/*强制换行*/
+.nowrap{white-space:nowrap;}/*禁止换行*/
+.clearfix:after {content:'';display:block;height:0;overflow:hidden;clear:both;}
