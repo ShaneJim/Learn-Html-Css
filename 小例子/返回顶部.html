@@ -2,19 +2,19 @@
 <html lang="zh-CN">
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0" name="viewport" />
-    <meta name="format-detection" content="telephone=no,address=no,email=no">
-    <title>返回顶部</title>
-    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/backtotop.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0" name="viewport" />
+        <meta name="format-detection" content="telephone=no,address=no,email=no">
+        <title>返回顶部</title>
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/backtotop.css">
 </head>
 
 <body>
-    <div class="back-to" id="toolBackTop">
-        <a title="返回顶部" onclick="window.scrollTo(0,0);return false;" href="javascript:void(0);" class="back-top"></a>
-    </div>
+        <div class="back-to" id="toolBackTop">
+                <a class="back-top" title="返回顶部" href="javascript:void(0);" ></a>
+        </div>
 </body>
 
 </html>
@@ -30,5 +30,10 @@ $(document).ready(function () {
                         bt.hide();
                 }
         });
+
+        $(".back-top").click(function(){
+                $('html,body').animate({scrollTop:'0px'}, 'fast');
+                // window.scrollTo(0,0);return false;           或者
+        })
 })
 </script>
